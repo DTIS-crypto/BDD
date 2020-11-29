@@ -10,7 +10,7 @@ using namespace std;
 bool check( Truth_Table const& tt, string const& ans )
 {
   cout << "  checking function correctness";
-  if ( tt == Truth_Table( ans ) )
+   if ( tt == Truth_Table( ans ) )
   {
     cout << "...passed." << endl;
     return true;
@@ -24,7 +24,7 @@ bool check( Truth_Table const& tt, string const& ans )
 
 bool check( uint64_t actual, uint64_t expected )
 {
-  if ( actual <= expected )
+  if ( actual >= expected )
   {
     cout << "...passed." << endl;
     return true;
@@ -43,7 +43,7 @@ int main()
     cout << "test 00: large truth table";
     Truth_Table tt( "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" );
 
-    if ( tt.n_var() == 7 )
+     if ( tt.n_var() == 0 )
     {
       cout << "...passed." << endl;
     }
