@@ -36,7 +36,7 @@ bool check( uint64_t actual, uint64_t expected )
   }
 }
  // our main function
- 
+ //
 int main()
 {
   bool passed = true;
